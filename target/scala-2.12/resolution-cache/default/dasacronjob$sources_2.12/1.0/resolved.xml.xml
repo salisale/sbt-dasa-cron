@@ -4,7 +4,7 @@
 		module="dasacronjob$sources_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20171127164853"
+		publication="20171128225949"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

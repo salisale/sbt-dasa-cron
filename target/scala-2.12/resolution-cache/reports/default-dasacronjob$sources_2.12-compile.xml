@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171127164853"/>
+		date="20171128225949"/>
 	<dependencies>
 		<module organisation="com.github.jurajburian" name="mailer_2.12">
 			<revision name="1.2.1" status="release" pubdate="20170316135428" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/JurajBurian/mailer" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">

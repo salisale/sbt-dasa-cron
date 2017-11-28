@@ -15,7 +15,9 @@ import java.time.DayOfWeek
     def getSegmentedNames() = List(fname, lname, mname).filterNot(_ == "")
     override def toString: String = List(fname, mname, lname).filterNot(_.equals("")).mkString(" ")
   }
-  case class Genre(genre: String, maxPrice: Option[Int])
+  case class Genre(genre: String, maxPrice: Option[Int]) {
+    override def toString: String = genre.concat(if (maxPrice.isDefined) " [<" + maxPrice.getOrElse("") + "B]" else "")
+  }
   case class Filter(authors: List[Author], genres: List[Genre], keywords: List[String])
   case class Output(authorMap: Map[Author, List[Book]], genreMap: Map[Genre, List[Book]],
                     keywordMap: Map[String, List[Book]])

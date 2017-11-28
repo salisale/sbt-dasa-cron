@@ -28,7 +28,7 @@ object Main extends App {
     */
   def runDailyArrivals(user: User) = {
     def processDailyArrival(dailyFile: String, excelOutputFile: String, filter: Filter, newExcel: Boolean) = {
-      // getLastProcessedDate() will return yesterday if temp excel does not exist
+      // getLastProcessedDate() will return the day before yesterday if temp excel does not exist
       // assuming last noti day was yesterday
       val lastDateProcessed = ExcelDailyTemp.getLastProcessedDate(getDailyTempFilePath())
       val (entries, newLastDateProcessed) = ExcelReader.parseDailyArrivals(dailyFile, lastDateProcessed)
@@ -69,22 +69,34 @@ object Main extends App {
   }
 
   println("Main class running")
-   run()
+  mainRun()
 
-  def run() = {
-    val specFile = getDirPath() + "/DasaCronUserFile.txt"
-    val user = SpecFileParser.load(specFile)
-    val (emails, daysOfWeek, stockDays, filter) = (user.emails, user.days, user.stockDays, user.filter)
 
-    runDailyArrivals(user) // runs everyday
-    if (emailNotiToday(stockDays)) { // if stock noti day
-      println("This is Stock day...processing dasabase")
-      runDasaBase(user)
-    } else {
-      println("This is not Stock day...end")
+  def mainRun() = {
+    val allUserFiles = getAllUserFiles()
+    allUserFiles.map(x => println(s"UserFile: {$x.getName}"))
+    for (file <- allUserFiles) {
+      val thread = new Thread { // use concurrent run
+        override def run {
+          println("Running user: ", file.getAbsolutePath)
+          val user = SpecFileParser.load(file.getAbsolutePath)
+          val (emails, daysOfWeek, stockDays, filter) = (user.emails, user.days, user.stockDays, user.filter)
+
+          runDailyArrivals(user) // runs everyday
+          if (emailNotiToday(stockDays)) {
+            // if stock noti day
+            println("This is Stock day...processing dasabase")
+            runDasaBase(user)
+          } else {
+            println("This is not Stock day...end")
+          }
+        }
+      }
+      thread.start()
     }
-
   }
+
+
   def getDirPath() = {
     val dirPath = System.getProperty("user.home") + File.separator + "dasacron" + File.separator
     val dir = new File(dirPath)
@@ -93,6 +105,14 @@ object Main extends App {
   }
   def getDailyTempFilePath() = {
     getDirPath() + File.separator + "dailytemp.xls"
+  }
+  def getAllUserFiles(): List[File] = {
+    val d = new File(getDirPath)
+    if (d.exists && d.isDirectory) {
+      d.listFiles.filter(_.isFile).filter(_.getName.endsWith(".txt")).toList
+    } else {
+      List[File]()
+    }
   }
 
 }

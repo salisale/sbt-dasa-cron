@@ -1,7 +1,6 @@
-[0m[[0minfo[0m] [0mRunning Main [0m
-[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0minfo[0m] [0mRunning Main Main[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/target/scala-2.12/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/Havensbee/DasaCronJob/target/scala-2.12/classes[0m
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.4.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.10.2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/org.apache.poi/poi/jars/poi-3.15.jar[0m
@@ -11,11 +10,17 @@
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/com.github.jurajburian/mailer_2.12/jars/mailer_2.12-1.2.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread Thread-2 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread Thread-2 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread Thread-1 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread Thread-1 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Keep-Alive-Timer,8,system][0m
 [0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread Thread-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted Thread-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-3[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

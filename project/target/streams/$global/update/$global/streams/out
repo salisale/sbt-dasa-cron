@@ -1,17 +1,39 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/Havensbee/Library/Mobile%20Documents/com~apple~CloudDocs/DasaCronJob/project/}dasacronjob-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/Havensbee/DasaCronJob/project/}dasacronjob-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#dasacronjob-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.12.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.eed3si9n#sbt-assembly;0.12.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.eed3si9n#sbt-assembly;0.12.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.eed3si9n#sbt-assembly;0.12.0[0m
+[0m[[0mdebug[0m] [0m	found com.eed3si9n#sbt-assembly;0.12.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.12.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.12.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
@@ -1819,6 +1841,16 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.12.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
@@ -3709,12 +3741,36 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.12.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [test-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.12.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#dasacronjob-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#dasacronjob-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
@@ -5956,6 +6012,7 @@
 [0m[[0mdebug[0m] [0mignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.12.0!sbt-assembly.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.6!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.16!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.16!main.jar[0m
@@ -6009,19 +6066,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1848ms :: artifacts dl 28ms[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT compile produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT runtime produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT test produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT provided produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT optional produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT compile-internal produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT runtime-internal produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT test-internal produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT plugin produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT sources produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT docs produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT pom produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT scala-tool produced in /Users/Havensbee/Library/Mobile Documents/com~apple~CloudDocs/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1848ms resolve - 28ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1767ms :: artifacts dl 26ms[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT compile produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT runtime produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT test produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT provided produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT optional produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT compile-internal produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT runtime-internal produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT test-internal produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT plugin produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT sources produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT docs produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT pom produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#dasacronjob-build;0.1-SNAPSHOT scala-tool produced in /Users/Havensbee/DasaCronJob/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-dasacronjob-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1767ms resolve - 26ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

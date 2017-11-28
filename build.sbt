@@ -17,4 +17,9 @@ libraryDependencies ++= Seq(
   "com.github.jurajburian" %% "mailer" % "1.2.1"
 )
 
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
 mainClass in (Compile, run) := Some("Main")

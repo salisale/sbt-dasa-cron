@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: mailer
+Implementation-Version: 1.2.1
+Specification-Vendor: com.github.jurajburian
+Specification-Title: mailer
+Implementation-Vendor-Id: com.github.jurajburian
+Specification-Version: 1.2.1
+Implementation-Vendor: com.github.jurajburian
+

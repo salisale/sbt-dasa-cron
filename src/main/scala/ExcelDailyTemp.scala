@@ -56,7 +56,7 @@ object ExcelDailyTemp extends App {
     */
   def getLastProcessedDate(filePath: String): DateTime = {
     val file = new File(filePath)
-    if (!file.exists()) {DateTime.now().minusDays(1)}
+    if (!file.exists()) {DateTime.now().minusDays(2)} // so that it processes one of yesterday
     else {
       val workbook = new HSSFWorkbook(new FileInputStream(file))
       new DateTime(getProcessedDateInterval(workbook.getSheetAt(0))._2)
