@@ -7,7 +7,7 @@ object EntryQuery extends App{
     val userKeyList = filter.keywords
 
     // return List in case of collaboration; pitfall of this method being
-    // "b, d" will be the filtered result of "a, b/ c, d"
+    // "b, d" will be the filtered result of "a, b/ c, d" or surname becomes first name
     def authorFiltered(entry: Book): List[(Author, Book)] = {
       val filAuthors = userAuthorList.filter(_.getSegmentedNames().diff(entry.getSplitNameList()).isEmpty)
       if (filAuthors.isEmpty) Nil else filAuthors.map(x => (x, entry))
@@ -24,8 +24,12 @@ object EntryQuery extends App{
     }
     // to implement: multiple-word key
     def titleFiltered(entry: Book): List[(String, Book)] = {
-      val words = entry.titleStr.split("[,;:/()'-/&]\\s*|\\s+")
-      val filKeys = userKeyList.filter(words.contains(_))
+      // "story and lit" = "history and lit"
+      def checkPhraseInString(phrase: String) = entry.titleStr.toLowerCase.contains(phrase.toLowerCase)
+      def checkWordInString(word: String) = // one word: "story" != "history"
+        entry.titleStr.split("[,;:/()'-/&]\\s*|\\s+").map(_.toLowerCase()).contains(word.toLowerCase)
+      val filKeys = userKeyList.filter(x => if (x.contains(" ")) checkPhraseInString(x)
+                                            else checkWordInString(x))
       if (filKeys.isEmpty) Nil else filKeys.map(x => (x, entry))
     }
     def filterHelper(entries: List[Book], filAuth: List[(Author, Book)], filGenre: List[(Genre, Book)],

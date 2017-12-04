@@ -4,7 +4,7 @@
 		module="dasacronjob_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20171128230007"
+		publication="20171130162615"
 	>
 		<description>
 		DasaCronJob

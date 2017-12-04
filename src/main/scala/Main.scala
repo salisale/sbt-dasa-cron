@@ -5,13 +5,13 @@ import java.time.{DayOfWeek, LocalDate}
 
 object Main extends App {
 
-  def runDasaBase(user: User) = {
+  def runDasaBase(user: User, userName: String) = {
     def processDasaBase(dbFile: String, excelOutputFile: String, filter: Filter): File = {
       val entries = ExcelReader.parseDasaBase(dbFile) // retrieve all entries
       val output = EntryQuery.filter(entries, filter) // filtered entries
       ExcelOutput.writeAllToExcel(excelOutputFile, output)
     }
-    def getExcelOutputFilePath(dbFileName: String) = getDirPath() + File.separator + "filtered_" + dbFileName
+    def getExcelOutputFilePath(dbFileName: String) = "filtered_" + userName + "_" + dbFileName
     val dbFile = FileFetcher.fetchDatabase(getDirPath())
     val excelOutputFilePath = getExcelOutputFilePath(dbFile.getName)
 
@@ -26,18 +26,18 @@ object Main extends App {
   /**
     * Run every time the script is executed i.e. run every day
     */
-  def runDailyArrivals(user: User) = {
+  def runDailyArrivals(user: User, userName: String) = {
     def processDailyArrival(dailyFile: String, excelOutputFile: String, filter: Filter, newExcel: Boolean) = {
       // getLastProcessedDate() will return the day before yesterday if temp excel does not exist
       // assuming last noti day was yesterday
-      val lastDateProcessed = ExcelDailyTemp.getLastProcessedDate(getDailyTempFilePath())
+      val lastDateProcessed = ExcelDailyTemp.getLastProcessedDate(getDailyTempFilePath(userName))
       val (entries, newLastDateProcessed) = ExcelReader.parseDailyArrivals(dailyFile, lastDateProcessed)
       val output = EntryQuery.filter(entries, filter)
       ExcelOutput.writeDailyToExcel(excelOutputFile, output, newLastDateProcessed, newExcel)
     }
 
     val dailyFile = FileFetcher.fetchDailyArrivals(getDirPath())
-    val excelOutputFile = getDailyTempFilePath()
+    val excelOutputFile = getDailyTempFilePath(userName)
 
     if (emailNotiToday(user.days)) {
       println("This is Email Noti day...")
@@ -74,19 +74,17 @@ object Main extends App {
 
   def mainRun() = {
     val allUserFiles = getAllUserFiles()
-    allUserFiles.map(x => println(s"UserFile: {$x.getName}"))
     for (file <- allUserFiles) {
       val thread = new Thread { // use concurrent run
         override def run {
-          println("Running user: ", file.getAbsolutePath)
+          println(s"sRunning user: ${file.getAbsolutePath}")
           val user = SpecFileParser.load(file.getAbsolutePath)
           val (emails, daysOfWeek, stockDays, filter) = (user.emails, user.days, user.stockDays, user.filter)
-
-          runDailyArrivals(user) // runs everyday
-          if (emailNotiToday(stockDays)) {
-            // if stock noti day
+          val userName = getUserName(file.getName) // to separate user temp and filtered files
+          runDailyArrivals(user, userName) // runs everyday
+          if (emailNotiToday(stockDays)) { // if stock noti day
             println("This is Stock day...processing dasabase")
-            runDasaBase(user)
+            runDasaBase(user, userName)
           } else {
             println("This is not Stock day...end")
           }
@@ -103,8 +101,8 @@ object Main extends App {
     if (!dir.exists()) dir.mkdir()
     dir.getAbsolutePath
   }
-  def getDailyTempFilePath() = {
-    getDirPath() + File.separator + "dailytemp.xls"
+  def getDailyTempFilePath(userName: String) = {
+    getDirPath() + File.separator + "dailytemp-" + userName + ".xls"
   }
   def getAllUserFiles(): List[File] = {
     val d = new File(getDirPath)
@@ -113,6 +111,11 @@ object Main extends App {
     } else {
       List[File]()
     }
+  }
+  // if userSpecFile does not specify user's name, it takes the whole string
+  // and filename of userSpecFile should be changed only on Email Noti day
+  def getUserName(fileName: String) = {
+    fileName.substring(fileName.lastIndexOf("-") + 1, fileName.lastIndexOf("."))
   }
 
 }

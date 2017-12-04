@@ -40,6 +40,7 @@ object SpecFileParser extends App{
       case "monday" => Some(DayOfWeek.MONDAY)
       case "tuesday" => Some(DayOfWeek.TUESDAY)
       case "wednesday" => Some(DayOfWeek.WEDNESDAY)
+      case "thursday" => Some(DayOfWeek.THURSDAY)
       case "friday" => Some(DayOfWeek.FRIDAY)
       case "saturday" => Some(DayOfWeek.SATURDAY)
       case "sunday" => Some(DayOfWeek.SUNDAY)
