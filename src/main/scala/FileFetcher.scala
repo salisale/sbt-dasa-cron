@@ -13,9 +13,10 @@ object FileFetcher extends App {
     val daily_update_key = "Daily Update"
     fetchFile(daily_update_key, dirPath).get // no else; exception would have been thrown
   }
+
   def fetchDatabase(dirPath: String): File = {
-    val database_key = "'Dasa'Base"
-    fetchFile(database_key, dirPath).get
+      val database_key = "'Dasa'Base"
+      fetchFile(database_key, dirPath).get
   }
 
   protected def fetchFile(key: String, dirPath: String): Option[File] = {

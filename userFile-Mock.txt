@@ -1,0 +1,38 @@
+1. Email:
+xxxxx@hotmail.com, yyyyyy@gmail.com
+
+2. Daily Arrivals Notification (e.g. “Monday, Wednesday, Friday”):
+Saturday, Sunday, Monday, Wednesday
+
+3. Stock Notification (“Wednesday, Saturday”):
+Friday, Sunday
+
+4. Filter:
+	A. Author:
+		- Oscar Wilde
+		- Voltaire
+		- Ralph Waldo Emerson
+		- William S. Burroughs
+		- Rushdie
+		- Stieg Larsson
+		- Dawkins
+		- Carl Sagan
+		- Jules Verne
+
+	B. Genre (e.g. “Poetry” or “Poetry, 200”): 
+		- Science, 200
+		- Mystery, 120
+		- Poetry
+		- Plays
+
+	C. Keyword-in-title:
+		- On the road
+		- Prose
+		- Essay
+		- Paris
+		- Literature
+		- Catcher in the Rye
+		- Dictator’s Handbook
+		- Martian
+		- High rise
+		- High-rise

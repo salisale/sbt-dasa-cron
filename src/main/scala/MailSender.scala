@@ -1,4 +1,4 @@
-import java.nio.file.Paths
+import java.nio.file.{Path, Paths}
 import java.util.Properties
 import javax.activation.{DataHandler, FileDataSource}
 import javax.mail._
@@ -77,7 +77,7 @@ object MailSender extends App {
       val filePart = new MimeBodyPart() // set attachement
       val source = new FileDataSource(attachedFilePath)
       filePart.setDataHandler(new DataHandler(source))
-      filePart.setFileName(attachedFilePath)
+      filePart.setFileName(Paths.get(attachedFilePath).getFileName.toString)
       multipart.addBodyPart(filePart)
 
       message.setContent(multipart)
