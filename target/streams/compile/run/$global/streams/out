@@ -12,16 +12,65 @@
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/com.github.jurajburian/mailer_2.12/jars/mailer_2.12-1.2.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Havensbee/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-0) java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell[0m
+java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.hssf.usermodel.HSSFCell.typeMismatch(HSSFCell.java:655)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getRichStringCellValue(HSSFCell.java:732)
+	at org.apache.poi.hssf.usermodel.HSSFCell.getStringCellValue(HSSFCell.java:715)
+	at ExcelReader$.$anonfun$parseDasaBase$1(ExcelReader.scala:79)
+	at scala.collection.Iterator.foreach(Iterator.scala:929)
+	at scala.collection.Iterator.foreach$(Iterator.scala:929)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1417)
+	at ExcelReader$.parseDasaBase(ExcelReader.scala:72)
+	at Main$.processDasaBase$1(Main.scala:14)
+	at Main$.runDasaBase(Main.scala:22)
+	at Main$.$anonfun$mainRun$2(Main.scala:86)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:655)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:289)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
 [0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-35[0m
-[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-35[0m
 [0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-33[0m
 [0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-33[0m
-[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-34[0m
-[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-34[0m
 [0m[[0mdebug[0m] [0mInterrupting thread Thread-1[0m
 [0m[[0mdebug[0m] [0m	Interrupted Thread-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-34[0m
+[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-34[0m
+[0m[[0mdebug[0m] [0mInterrupting thread scala-execution-context-global-35[0m
+[0m[[0mdebug[0m] [0m	Interrupted scala-execution-context-global-35[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
-[0m[[0mdebug[0m] [0mExited with code 0[0m
+java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48$$anonfun$apply$49.apply(Defaults.scala:803)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48$$anonfun$apply$49.apply(Defaults.scala:803)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48.apply(Defaults.scala:803)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$47$$anonfun$apply$48.apply(Defaults.scala:801)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(compile:[31mrun[0m) Nonzero exit code: 1[0m

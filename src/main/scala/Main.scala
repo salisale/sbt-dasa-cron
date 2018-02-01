@@ -52,7 +52,7 @@ object Main extends App {
 
       MailSender.sendDailyArrivalsMail(user.emails, HTMLStr) // send file
 
-      tempExcelFile.delete() // delete temp file
+      //tempExcelFile.delete() // delete temp file
 
     } else { // Not noti-day, append to existing temp file
       if (!Files.exists(Paths.get(excelOutputFile)))

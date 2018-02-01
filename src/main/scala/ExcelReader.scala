@@ -76,7 +76,7 @@ object ExcelReader extends App {
       if (cellCount==cellLast) { // book-entry; weed out bottom-trailing rows
                                 // with weird behavior e.g. cellCount=1,cellLast=5
         val id = getBookID(row.getCell(0))
-        val rawAuthor = row.getCell(1).getStringCellValue
+        val rawAuthor = getAuthorStr(row.getCell(1))
         val rawTitle = getBookTitle(row.getCell(2))
         val genre = row.getCell(3).getStringCellValue
         val price = row.getCell(4).getNumericCellValue.toInt
@@ -86,6 +86,17 @@ object ExcelReader extends App {
     }
     println(s"\t[Incoming Books: ${entryList.size}]")
     entryList.toList
+  }
+
+  /**
+    *  Good God, author can be a number
+    */
+  protected def getAuthorStr(cell: Cell) = cell.getCellType match {
+    case Cell.CELL_TYPE_STRING => cell.getStringCellValue
+    case _ => {
+      val df = new DataFormatter()
+      df.formatCellValue(cell)
+    }
   }
 
   protected def getBookID(cell: Cell) = cell.getCellType match {
